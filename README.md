@@ -1,6 +1,7 @@
 # Manual Control GD20 Inverter
 *Control **invt** Inverter **GD20 Series** manually with programming groups*
-Markup : ![picture alt](https://www.dropbox.com/h?preview=invt+gd20-or7g-s2_ij.jpeg "invt GD20 OR7G-S2 (xy)")
+<img src="[Imgur](https://i.imgur.com/3k4Hsev.jpg)" width="600" height="400">
+<img src="[Imgur](https://i.imgur.com/robAkFR.png)" width="600" height="400">
 # I   Overview
 # II  Start/Stop and Rotation Direction 
 # III Acceleration and Deceleration
