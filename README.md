@@ -16,7 +16,7 @@
 
 ## Keypad Operation
 <p align="center">
-	<img src="https://i.imgur.com/7zYExoP.png" width="800" height="800">
+	<img src="https://i.imgur.com/7zYExoP.png" width="700" height="700">
 </p>
 
 ## Start/Stop and Rotation Control
