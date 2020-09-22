@@ -1,4 +1,4 @@
-# Manual Control GD20 Inverter
+# Manual Control GD20 invt Inverter
 **Control *invt* Inverter GD20 Series manually by programming groups**  
 <img src="https://i.imgur.com/3k4Hsev.jpg" width="150" height="250">
 <img src="https://i.imgur.com/robAkFR.png" width="200" height="250">  
