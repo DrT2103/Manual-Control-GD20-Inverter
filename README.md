@@ -40,7 +40,7 @@ To start manually programming inverter with keypad mode, you have to make sure t
 - Step 5: Set `P00.01 = 0` to run command from keypad
 - Step 6: Set `P00.06 = 1` to adjust motor speed by potentiometer on keypad
 
-Now you can control some simple tasks of motor using keypad: *start/stop motor*,*control speed manually*,*jogging to test*.
+Now you can control some simple tasks of motor using keypad: *start/stop motor*, *control speed manually*, *jogging to test*.
 
 ### Control rotation direction
 
