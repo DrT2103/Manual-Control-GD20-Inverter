@@ -10,9 +10,10 @@
 
 ### Specifications
 <p align="center">
-	<img src="https://i.imgur.com/Sxol4Uo.png" width="200" height="45">  
-	<img src="https://i.imgur.com/ZLw7K5P.png" width="800" height="245">
+	<img src="https://i.imgur.com/Sxol4Uo.png" width="200" height="45">
 </p>
+
+<img src="https://i.imgur.com/ZLw7K5P.png" width="800" height="245">
 
 ## Keypad Operation
 <img src="https://i.imgur.com/7zYExoP.png" width="700" height="700">
@@ -20,9 +21,7 @@
 ## Start/Stop and Rotation Control
 ### Parameter adjustment
 For example, set parameter `P00.01 = 1`  
-<p align="center">
-	<img src="https://i.imgur.com/KAG9amf.png" width="790" height="240">
-</p>
+<img src="https://i.imgur.com/KAG9amf.png" width="790" height="240">
 
 ### Getting started
 To start manually programming inverter with keypad mode, you have to make sure that all settings are set to default. To do this, follow these steps below:
