@@ -10,8 +10,7 @@
 
 ### Specifications
 <p align="center">
-	<img src="https://i.imgur.com/Sxol4Uo.png" width="200" height="45">
-	
+	<img src="https://i.imgur.com/Sxol4Uo.png" width="200" height="45">  
 	<img src="https://i.imgur.com/ZLw7K5P.png" width="800" height="245">
 </p>
 
