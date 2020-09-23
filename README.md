@@ -10,10 +10,10 @@
 
 ### Specifications
 <img src="https://i.imgur.com/Sxol4Uo.png" width="200" height="45">  
-<img src="https://i.imgur.com/ZLw7K5P.png" width="800" height="245">
+<img src="https://i.imgur.com/ZLw7K5P.png" width="600" height="185">
 
 ## Keypad Operation
-<img src="https://i.imgur.com/7zYExoP.png" width="700" height="700">
+<img src="https://i.imgur.com/7zYExoP.png" width="550" height="550">
 
 ## Start/Stop and Rotation Control
 ### Parameter adjustment
