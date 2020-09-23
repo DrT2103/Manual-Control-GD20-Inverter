@@ -18,7 +18,7 @@
 ## Start/Stop and Rotation Control
 ### Parameter adjustment
 For example, set parameter `P00.01 = 1`  
-<img src="https://i.imgur.com/KAG9amf.png" width="790" height="240">
+<img src="https://i.imgur.com/KAG9amf.png" width="690" height="210">
 
 ### Getting started
 To start manually programming inverter with keypad mode, you have to make sure that all settings are set to default. To do this, follow these steps below:
