@@ -64,7 +64,7 @@ To adjust the acceleration and deceleration time manually by kedpad, we can acce
 > **DC injection bracking (or DC braking) is a non-contact electromagnetic interaction method to decelerate the moving of rotor by injecting DC current into two of three windings of the rotor.**
 
 <img src="https://i.imgur.com/EsBY9Cy.jpg" width="410" height="250">  
-<sub>DC injection braking begins when AC voltage is removed (S1 opens) and DC voltage is injected into the windings (S2 closes)</sup>
+*DC injection braking begins when AC voltage is removed (S1 opens) and DC voltage is injected into the windings (S2 closes)*
 
 **Advantages and disadvantages of DC braking**  
 
