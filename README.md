@@ -52,7 +52,13 @@ For example, to have the motor switched its rotation direction at frequency 40Hz
 - `P01.15 = 40`
 - `P01.24 = 0` (can be ignored)
 
-## Acceleration and Deceleration
 ## Start with Profile and DC Braking
+### Acceleration and deceleration
+#### Time
+
+#### ACC/DEC selection
+
+### DC braking
+
 ## Register
 ## Modbus Overview
