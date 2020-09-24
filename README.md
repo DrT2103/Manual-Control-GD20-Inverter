@@ -45,7 +45,7 @@ Now we can control some simple tasks of motor using keypad: *start/stop motor*, 
 The procedure of switching FWD/REV rotation is described in the *figure* below.  
 <img src="https://i.imgur.com/yiNVZDn.png" width="475" height="240">  
 Before controlling the switching rotation process, first we have to resive some important control parameters of group `P01`.  
-<img src="https://i.imgur.com/lDhEglS.png" width="500" height="255">  
+<img src="https://i.imgur.com/lDhEglS.png" width="685" height="350">  
 For example, to have the motor switched its rotation direction at frequency 40Hz immediately, we can adjust the above parameters to control the process.  
 - `P01.13 = 0` (can be ignored)
 - `P01.14 = 2`
