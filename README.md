@@ -54,7 +54,7 @@ For example, to have the motor switched its rotation direction at frequency 40Hz
 
 ## Start with Profile and DC Braking
 ### Acceleration and deceleration
-#### Time
+#### Acceleration and deceleration time
 
 #### ACC/DEC selection
 
