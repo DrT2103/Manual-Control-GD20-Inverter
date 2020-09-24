@@ -31,11 +31,11 @@ To start manually programming inverter with keypad mode, you have to make sure t
 	- `P00.03 >= 50`
 	- `P00.04 = 50 ~ P00.03`
 - Step 5: Set motor parameter (60W 3Ph SPG motor)
-	- Motor power (kW) <kbd>→</kbd> `P02.01 = 0.06`
-	- Frequency (Hz) <kbd>→</kbd> `P02.01 = 50`
-	- Speed (RPM) <kbd>→</kbd> `P02. 03 = 1350`
-	- Voltage (V) <kbd>→</kbd> `P02.04 = 220`
-	- Current (A) <kbd>→</kbd> `P02.05 = 0.8`
+	- Motor power (kW) → `P02.01 = 0.06`
+	- Frequency (Hz) → `P02.01 = 50`
+	- Speed (RPM) → `P02. 03 = 1350`
+	- Voltage (V) → `P02.04 = 220`
+	- Current (A) → `P02.05 = 0.8`
 - Step 6: Set `P00.01 = 0` to run command from keypad
 - Step 7: Set `P00.06 = 1` to adjust motor speed by potentiometer on keypad
 
@@ -54,11 +54,13 @@ For example, to have the motor switched its rotation direction at frequency 40Hz
 
 ## Start with Profile and DC Braking
 ### Acceleration and deceleration
-#### Acceleration and deceleration time
-
-#### ACC/DEC selection
+To adjust the acceleration and deceleration time manually by kedpad, we can access and manipulate two parameters `P00.11` and `P00.12`, where:
+- `P00.11` is acceleration time (ACC time 1) as the inverter speeds up from 0Hz to maximum frequency (value of `P00.03`)
+- `P00.12` is deceleration time (DEC time 1) as the inverter speeds down from maximum frequency (value of `P00.03`) to 0Hz
+> *Both `P00.11` and `P00.12` have the range of 0.0 to 3600.0s*
 
 ### DC braking
+
 
 ## Register
 ## Modbus Overview
