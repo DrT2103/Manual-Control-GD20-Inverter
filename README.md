@@ -83,8 +83,8 @@ There are some methods to control braking process of the motor and DC braking is
 ## Modbus Overview
 
 ## References
-[1] 
-[2] 
-[3] 
+[1]   
+[2]   
+[3]   
 [4] https://www.motioncontroltips.com/what-is-dc-injection-braking-and-how-does-it-compare-with-other-methods/  
 [5] 
