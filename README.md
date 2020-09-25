@@ -63,7 +63,7 @@ To adjust the acceleration and deceleration time manually by kedpad, we can acce
 #### DC injection braking overview
 > **DC injection bracking (or DC braking) is a non-contact electromagnetic interaction method to decelerate the moving of rotor by injecting DC current into two of three windings of the rotor.**
 
-<img src="https://i.imgur.com/EsBY9Cy.jpg" width="600" height="365">  
+<img src="https://i.imgur.com/EsBY9Cy.jpg" width="500" height="300">  
 *DC injection braking begins when AC voltage is removed (S1 opens) and DC voltage is injected into the windings (S2 closes)*
 
 **Advantages and disadvantages of DC braking**
@@ -78,7 +78,7 @@ There are some methods to control braking process of the motor and DC braking is
 
 #### DC braking control
 Considering the *profile* below of DC braking process  
-<img src="https://i.imgur.com/oKvEY31.png" width="600" height="450">  
+<img src="https://i.imgur.com/oKvEY31.png" width="500" height="375">  
 To basically manual control DC braking, we need to manipulate four variables of programming group `P01`, `P01.09` - `P01.10` - `P01.10` - `P01.12`, which functions is described as following table
 
 Function code | Name | Setting range | Default value
@@ -101,6 +101,6 @@ For example, the constant speed of motor is set as 50Hz and we want to brake the
 ## References
 [1] Goodrive20 Series Inverter Manual Reference: http://www.espacemoteurs.com/catalogue/V-MANUEL-GD20.pdf  
 [2] GD20 and GD200A Series Catalogue: http://www.fabelec.cl/downloads/invt/Catalogo_GD200A.pdf  
-[3] https://www.motioncontroltips.com/what-is-dc-injection-braking-and-how-does-it-compare-with-other-methods/  
+[3] DC Injection Braking: https://www.motioncontroltips.com/what-is-dc-injection-braking-and-how-does-it-compare-with-other-methods/  
 [4]   
 [5] 
