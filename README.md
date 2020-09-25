@@ -46,7 +46,7 @@ The procedure of switching FWD/REV rotation is described in the *figure* below.
 <img src="https://i.imgur.com/yiNVZDn.png" width="475" height="240">  
 Before controlling the switching rotation process, first we have to resive some important control parameters of group `P01`.  
 <img src="https://i.imgur.com/lDhEglS.png" width="685" height="350">  
-For example, to have the motor switched its rotation direction at frequency 40Hz immediately, we can adjust the above parameters to control the process.  
+For example, to have the motor switched its rotation direction at frequency 40Hz after completing deceleration immediately, we can adjust the above parameters to control the process.  
 - `P01.13 = 0` (can be ignored)
 - `P01.14 = 2`
 - `P01.15 = 40`
@@ -57,16 +57,16 @@ For example, to have the motor switched its rotation direction at frequency 40Hz
 To adjust the acceleration and deceleration time manually by kedpad, we can access and manipulate two parameters `P00.11` and `P00.12`, where:
 - `P00.11` is acceleration time (ACC time 1) as the inverter speeds up from 0Hz to maximum frequency (value of `P00.03`)
 - `P00.12` is deceleration time (DEC time 1) as the inverter speeds down from maximum frequency (value of `P00.03`) to 0Hz
-> *Both `P00.11` and `P00.12` have the range of 0.0 to 3600.0s*
+> Both `P00.11` and `P00.12` have the range of 0.0 to 3600.0s
 
 ### DC braking
 #### DC injection braking overview
 > **DC injection bracking (or DC braking) is a non-contact electromagnetic interaction method to decelerate the moving of rotor by injecting DC current into two of three windings of the rotor.**
 
-<img src="https://i.imgur.com/EsBY9Cy.jpg" width="410" height="250">  
+<img src="https://i.imgur.com/EsBY9Cy.jpg" width="600" height="365">  
 *DC injection braking begins when AC voltage is removed (S1 opens) and DC voltage is injected into the windings (S2 closes)*
 
-**Advantages and disadvantages of DC braking**  
+**Advantages and disadvantages of DC braking**
 
 Advantages | Disadvantages
 ---------- | -------------
@@ -77,14 +77,30 @@ high applicability with DC bus | Avoid braking at high speed, short braking time
 There are some methods to control braking process of the motor and DC braking is one of them, other two common methods are *dynamic braking* and *regenerative braking*. In this reference, we use DC braking since 60W motor only needed a small DC braking current to stop rotating.
 
 #### DC braking control
-cc
+Considering the *profile* below of DC braking process  
+<img src="https://i.imgur.com/oKvEY31.png" width="600" height="450">  
+To basically manual control DC braking, we need to manipulate four variables of programming group `P01`, `P01.09` - `P01.10` - `P01.10` - `P01.12`, which functions is described as following table
+
+Function code | Name | Setting range | Default value
+------------- | ---- | ------------- | -------------
+`P01.09` | Starting frequency of DC braking | 0.00Hz ~ `P00.03` (f<sub>max</sub>) | 0.00Hz
+`P01.10` | Waiting time before DC braking | 0.00 ~ 50.00s | 0.00s
+`P01.11` | DC braking current<br/>(*percentage of rated current of inverter* - 4.2A) | 0.0 ~ 100.0% | 0.0%
+`P01.12` | DC braking time | 0.00 ~ 50.00s | 0.00s
+
+For example, the constant speed of motor is set as 50Hz and we want to brake the motor almost instantly whenever we push the **STOP** button. Some settings of above parameters would help.  
+* Step 1: Set DC braking frequency at 50Hz `P01.09 = 50.00`
+* Step 2: Set DC braking current must bigger than rated current of the motor (0.8A), choose 1A (25%), `P01.11 = 25.0`
+* Step 3: Set retention time greater than 0 to activate the DC braking, `P01.12 > 0.00`
+
+> Note for using the DC braking waiting time `P01.10`: *Inverter blocks the output frequency before starting the DC braking. After this waiting time, the DC braking will be started so as to prevent over-current fault caused by DC braking at high speed*.
 
 ## Register
 ## Modbus Overview
 
 ## References
-[1]   
-[2]   
-[3]   
-[4] https://www.motioncontroltips.com/what-is-dc-injection-braking-and-how-does-it-compare-with-other-methods/  
+[1] Goodrive20 Series Inverter Manual Reference: http://www.espacemoteurs.com/catalogue/V-MANUEL-GD20.pdf  
+[2] GD20 and GD200A Series Catalogue: http://www.fabelec.cl/downloads/invt/Catalogo_GD200A.pdf  
+[3] https://www.motioncontroltips.com/what-is-dc-injection-braking-and-how-does-it-compare-with-other-methods/  
+[4]   
 [5] 
