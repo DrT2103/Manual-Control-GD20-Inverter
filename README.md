@@ -77,7 +77,7 @@ high applicability with DC bus | Avoid braking at high speed, short braking time
 There are some methods to control braking process of the motor and DC braking is one of them, other two common methods are *dynamic braking* and *regenerative braking*. In this reference, we use DC braking since 60W motor only needed a small DC braking current to stop rotating.
 
 #### DC braking control
-
+cc
 
 ## Register
 ## Modbus Overview
