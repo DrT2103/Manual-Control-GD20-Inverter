@@ -95,12 +95,7 @@ For example, the constant speed of motor is set as 50Hz and we want to brake the
 
 > Note for using the DC braking waiting time `P01.10`: *Inverter blocks the output frequency before starting the DC braking. After this waiting time, the DC braking will be started so as to prevent over-current fault caused by DC braking at high speed*.
 
-## Register
-## Modbus Overview
-
 ## References
 [1] Goodrive20 Series Inverter Manual Reference: http://www.espacemoteurs.com/catalogue/V-MANUEL-GD20.pdf  
 [2] GD20 and GD200A Series Catalogue: http://www.fabelec.cl/downloads/invt/Catalogo_GD200A.pdf  
 [3] DC Injection Braking: https://www.motioncontroltips.com/what-is-dc-injection-braking-and-how-does-it-compare-with-other-methods/  
-[4]   
-[5] 
